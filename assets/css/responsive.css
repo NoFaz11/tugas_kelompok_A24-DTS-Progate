@@ -1,0 +1,139 @@
+/* tablet */
+@media all and (max-width: 1000px) {
+    /* MAIN */
+    .cover h1 {
+        font-size: 32px;
+    }    
+    /* END MAIN */
+
+    /* DESTINASI */
+    .heading h2 {
+        font-size: 30px;
+    }
+
+    .destinasi h3 {
+        font-size: 26px;
+    }
+    
+    .deskripsi {
+        font-size: 22px;
+    }
+
+    .overlay img {
+        max-width: 660px;
+    }
+    /* END DESTINASI */
+
+    /* ABOUT US */
+    .lesson {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    /* END ABOUT US */
+}
+
+/* smartphone */
+@media all and (max-width: 670px) {
+    /* HEADER */
+    .header-right { 
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    /* END HEADER */
+
+    /* MAIN */
+    .cover {
+        text-align: center;
+    }
+
+    .cover h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .cover p {
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 20px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .btn-wrapper h2 {
+        font-size: 20px;
+        line-height: 25px;
+        margin: 20px 0 5px 0;
+    }
+
+    .btn-wrapper {
+        margin: 0 15px;
+    }
+    /* END MAIN */
+
+    /* DESTINASI */
+    .heading h2 {
+        font-size: 26px;
+    }
+
+    .destinasi {
+        padding: 10px 0;
+    }
+
+    .destinasi h3 {
+        font-size: 22px;
+        text-align: center;
+        padding: 0 0 5px 0;
+    }
+
+    .sub-destinasi-even,
+    .sub-destinasi-odd {
+        display: grid;
+    }
+
+    .deskripsi {
+        height: auto;
+        width: auto;
+        font-size: 18px;
+    }
+
+    .overlay img {
+        max-width: 250px;
+    }
+    /* END DESTINASI */
+
+    /* ABOUT US */
+    .lesson {
+        width: 100%;
+    }
+
+    .modal-window div{
+        width: 100%;
+    }
+    /* END ABAOUT US */
+
+    /* FOOTER */
+    .pembungkus{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo{
+        margin-left: 0;
+    }
+
+    .copyright{
+        padding-right: 0;
+        padding-top: 15px;
+    }
+    /* END FOOTER */
+
+    
+    
+        
+}

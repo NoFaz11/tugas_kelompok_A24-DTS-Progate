@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* HEADER */
+header {
+	height: 75px;
+	width: 100%;
+	background-color: gray;
+	opacity: 0.8;
+	position :fixed;
+	top: 0;
+	z-index: 10;
+}  
+
+.header-left {
+	float: left;
+}
+  
+.logo {
+	width: 140px;
+	margin: 0 auto;
+	height: 70px
+}
+  
+.header-right {
+	float: right;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin-top: 1px;     
+}
+
+.header-right :hover {
+	background-color: rgba(255, 255, 255, 1);
+	color: gray;
+	transition: all 0.5s;
+}  
+  
+.header-right a {
+	line-height: 70px;
+	padding: 0px 10px;
+	display: block;
+	float: left;
+	color: white;
+	border: 1px solid gray;
+}
+
+.menu-icon {
+	color: white;
+	float: right;
+	font-size: 25px;
+	padding: 21px 0;
+	display: none;
+	margin-right: 5px;
+}
+/* END HEADER */
+
+/* MAIN */
+.cover {
+	padding: 250px 0 150px 0;
+  	background-image: url(../img/photo/cover.jpg);
+  	background-size: cover;
+  	color: white;
+  	text-align: center;
+}
+
+.cover h1 {
+	opacity: 0.7;
+  	font-size: 45px;
+  	letter-spacing: 5px;
+  	margin-bottom: 5px;
+}
+
+.cover p {
+	opacity: 0.7;
+  	margin-bottom: 3px;
+}
+
+.btn-wrapper h2 {
+	margin-top: 20px;
+	opacity: 0.7;
+}
+
+.btn-wrapper {
+	text-align: center;
+	margin: 5px 0;
+}
+
+.btn {
+	padding: 12px 24px;
+  	color: white;
+  	display: inline-block;
+  	opacity: 0.8;
+  	border-radius: 4px;
+  	text-align: center;
+}
+
+.wonderful {
+	background-color: gray;
+}
+
+.wonderful-icon {
+	margin-right: 5px;
+	max-width: 15px;
+}
+
+.btn:hover {
+	opacity: 1;
+  }
+/* END MAIN */
+
+/* DESTINASI */
+.heading {
+	padding: 60px 0 30px 0;
+	border-bottom: 2px solid #eee;
+	color: black;
+}
+
+.heading h2 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 35px;
+}
+
+.destinasi {
+	padding: 25px 0;
+}
+
+.destinasi h3 {
+	color: black;
+	padding: 0 0 5px 10px;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.sub-destinasi-even,
+.sub-destinasi-odd {
+	display: flex
+}
+
+.sub-destinasi-odd {
+	flex-direction: row-reverse;
+}
+
+.destinasi-thumb {
+	float: left;
+	width: 100%;
+}
+
+.destinasi-thumb img {
+	width: 100%;
+	height: 300px;
+	opacity: 0.7;
+    cursor: pointer;
+	padding: 0 10px;
+}
+
+.destinasi-thumb img:hover {
+	opacity: 1;
+}
+
+.deskripsi {
+	padding: 0 10px;
+	color: gray;
+	font-size: 26px;
+	font-weight: 200;
+	height: 300px;
+	width: 100%;
+	text-align: justify;
+	overflow: auto;
+}
+
+.overlay {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: 9999;
+	transition: .8s;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.overlay img {
+	border-radius: 0;
+	max-height: 100%;
+	box-shadow: 2px 2px 7px rgba(0, 0, 0, .5);
+}
+
+.overlay .close {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	margin-left: -20px;
+	color: white;
+	text-decoration: none;
+	background-color: black;
+	border: 1px solid white;
+	line-height: 14px;
+	padding: 5px;
+	opacity: 0;
+}
+
+.overlay:target img {
+	animation: fadeSaja 2s;
+}
+
+.overlay:target .close {
+	animation: slideClose .5s .5s forwards;
+}
+
+@keyframes fadeSaja {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes slideClose {
+	0% {
+		opacity: 0;
+		margin-top: -20px;
+	}
+
+	100% {
+		opacity: 1;
+		margin-top: 50px;
+	}
+}
+/* END DESTINASI */
+
+/* ABOUT US */
+.lesson-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+  
+.heading {
+    /* padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60; */
+	padding: 60px 0 30px 0;
+    border-bottom: 2px solid #eee;
+    color: black;
+}
+  
+.heading h2 {
+    /* font-weight: normal; */
+	text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.lessons {
+	padding: 25px 0;
+}
+  
+.lesson {
+    float: left;
+    width: 20%;
+}
+  
+.lesson-icon {
+    position: relative;
+}
+  
+.avatar {
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+}
+  
+.modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-window div {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: white;
+}
+
+.modal-window header {
+    font-weight: bold;
+}
+
+.modal-window h1 {
+    font-size: 100%;
+    margin: 0 0 15px;
+}
+  
+.modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    color: black;
+}
+  
+.modal-window div {
+    border-radius: 1rem;
+}
+  
+.modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+/* END ABOUT US */
+
+/* FOOTER */
+footer {
+	background-color: #757575;
+	color: white;
+}
+
+.copyright {
+	font-size: 14px;
+	padding-top: 27px;
+	padding-right: 20px;
+}
+  
+.pembungkus {
+	display: flex;
+	justify-content: space-between;
+}
+  
+.logo {
+	width: 150px;
+	margin-left: 40px;
+}
+/* END FOOTER */
+
+
+
